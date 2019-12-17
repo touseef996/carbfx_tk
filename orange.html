@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Carbfax </title>
+
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1, minimal-ui"/>
+	<link rel = "shortcut icon" href="favicon.ico"/>
+	
+	<meta name = "apple-mobile-web-app-capable" content="yes" />
+	<meta name = "apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel = "apple-touch-startup-image" href="images/splash.png" />
+	<link rel = "apple-touch-icon-precomposed" href = "images/icon.png" />
+	<link rel = "icon" size ="192x192" href="images/icon.png" />
+	<link rel ="stylesheet" href = "css/jquery.mobile-1.4.5.min.css">
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src ="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page"  data-title="Fruit items" id="fruits_items" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h4> Carbfax </h4>
+	</div>
+	<a href ="categories.html" class="ui-btn ui-shadow ui-corner-all ui-icon-bullets ui-btn-icon-top"> Categories </a>
+	<a href ="fruits.html" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left"> Fruits </a>
+	<div data-role="content">
+		<h2> Apple Fruit Nutrition</h2>
+
+<table data-role="table" id="phone-table" data-mode="columntoggle" data-column-btn-text="Customize..." data-column-btn-theme="a" class="apple-compare ui-shadow table-stroke">
+  <thead>
+    <tr>
+      <th class="label"></th>
+    <th>
+        <h4>Nutrition</h4>
+        
+    </th>
+    <th data-priority="1">
+        <h3>Vitamins</h3>
+    </th>
+    <th data-priority="2">
+        <h4>Minerals</h4>
+        
+    </th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="photos">
+      <th class="label"></th>
+      <td><a href="#img-orange" data-rel="popup" data-position-to="window"><img src="orange.jpg"></a></td>
+<td><a href="#img-vitamins" data-rel="popup" data-position-to="window"><img src="vitaminorange.jpg"></a></td>
+  <td><a href="#img-orangeminerals" data-rel="popup" data-position-to="window"><img src="orangeminerals.jpg"></a></td>
+  
+ </tr>
+    <tr>
+      <th class="label">Total Fat</th>
+      <td>0.1g</td>
+      <td>Folates    3%</td>
+      <td> Calcium        2mg</td>
+ 	  
+    </tr>
+    <tr>
+      <th class="label">Protein</th>
+      <td>0.10g</td>
+      <td>Niacin     4%</td>
+ 	  <td>Iron            0.22mg</td>
+    
+    </tr>
+    <tr>
+      <th class="label">Energy</th>
+      <td>40kcl</td>
+      <td>Thiamin    2%</td>
+      <td>Magnesium       10mg</td>
+	   
+    </tr>
+    <tr>
+      <th class="label">Carbohydrates</th>
+      <td>10g</td>
+      <td>Vitamin C   0.01%</td>
+       <td>Zinc           0.20mg</td>
+	  
+    </tr>
+  </tbody>
+</table>
+<!-- Popups for lightbox images -->
+<div id="img-apple1" data-role="popup" data-overlay-theme="b">
+    <img src="vitamins.jpg">
+</div>
+
+
+v
+	</div>
+	
+    <div data-role="footer" data-position="fixed">
+		<h4> Carbfax Copyright©</h4>
+	</div>
+</div>
+</body>
+</html>

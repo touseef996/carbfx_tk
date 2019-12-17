@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+<title> Carbfax </title>
+<style>
+   
+    body  {
+		overflow: hidden;
+	}
+
+	/* Preloader */
+	#preloader {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		background-color:#fff; /* change if the mask should have another color then white */
+		z-index:99; /* makes sure it stays on top */
+	}
+
+	#status {
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:50%; /* centers the loading animation horizontally one the screen */
+		top:50%; /* centers the loading animation vertically one the screen */
+		background-image:url(../img/status.gif); /* path to your loading animation */
+		background-repeat:no-repeat;
+		background-position:center;
+		margin:-100px 0 0 -100px; /* is width and height divided by two */
+	}
+    </style>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1, minimal-ui"/>
+	<link rel = "shortcut icon" href="favicon.ico"/>
+	
+	<meta name = "apple-mobile-web-app-capable" content="yes" />
+	<meta name = "apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel = "apple-touch-startup-image" href="images/splash.png" />
+	<link rel = "apple-touch-icon-precomposed" href = "images/icon.png" />
+	<link rel = "icon" size ="192x192" href="images/icon.png" />
+	<link rel ="stylesheet" href = "css/jquery.mobile-1.4.5.min.css">
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src ="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <!-- Preloader -->
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+        <center> <img id="carbfax" src="carbfaxlogo.jpg" alt="" width="500" lenght="100"></center>
+	</div>
+    
+ <!-- jQuery Plugin -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    
+<div data-role="page"  data-title="Carbfax" id="index" data-theme="a">
+	<div data-role="header" data-position="fixed">
+	<button type="button" onclick="myFunction()">Set background color</button>
+        
+
+
+      <!-- Preloader -->
+	<script type="text/javascript">
+		//<![CDATA[
+			$(window).load(function() { 
+				$('#status').fadeOut(); 
+				$('#preloader').delay(2000).fadeOut('slow');
+				$('body').delay(500).css({'overflow':'visible'});
+		})
+		//]]>
+	</script>   
+        <script>
+                        function myFunction() {
+    document.body.style.backgroundColor = "blue";
+}
+	</script>
+		<h4> Carbfax </h4>
+	</div>
+	<div data-role="content">
+        
+        <h2> Welcome to Carbfax </h2>
+        
+     <center><img src="carbfaxlogo.jpg" alt="image" style="width:20%" height="40%" ></center>
+  
+		<a href="categories.html" class="ui-btn ui-btn-icon-top ui-icon-bullets">Categoriess</a>
+        
+		<a href="login.html" class="ui-btn ui-btn-icon-top ui-icon-lock">Diary</a>
+        
+		<a href="database.php" class="ui-btn ui-btn-icon-top ui-icon-comment">Database</a>
+       
+	<a href="instruction.html" class="ui-btn ui-btn-icon-top ui-icon-info">Instruction</a>
+	   
+    </div>
+ <p>About Carbfax</p>
+    <p>This application is about how to keep your carbohydrate level as low as you can.</p>
+    <P>This application will help you keep a track of your daily food been eaten and will also alert you with the timings of your meal depends on what you have set.</p> 
+    <p>Carbohydrates are everything from sugars to pasta and breads. The one thing all carbohydrates have in common, is they are all composed of one of three monosaccharides, (Mono = One, Saccharide = Sugar)</p><p>These three monosaccharides are Glucose (dextrose), Fructose (levulose or fruit sugar), and Galactose.5 Mar 2005</p><p>Carbohydrates are called simple or complex, depending on their chemical structure. Simple carbohydrates include sugars found naturally in foods such as fruits, vegetables, milk, and milk products.</p> <p>They also include sugars added during food processing and refining. Complex carbohydrates include whole grain breads and cereals, starchy vegetables and legumes. Many of the complex carbohydrates are good sources of fiber.</p>
+  
+    <div data-role="footer" data-position="fixed">
+	
+        <h4> Carbfax Copyright©</h4>
+	</div>
+</div>
+</body>
+</html>
